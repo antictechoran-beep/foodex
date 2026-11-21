@@ -58,7 +58,7 @@ th{position:sticky;top:0;background:var(--primary);color:#fff;padding:9px 8px;fo
 td{padding:8px;text-align:center;border-bottom:1px solid #ffe7dc;white-space:nowrap;} td.des{text-align:start;white-space:normal;font-weight:700;color:var(--primary-dark);min-width:130px;}
 td.n{direction:ltr;font-variant-numeric:tabular-nums;} tbody tr:nth-child(even){background:#fffaf7;} tbody tr.cl{cursor:pointer;} tbody tr.cl:hover{background:var(--primary-pale);}
 .neg{color:var(--danger);font-weight:800;} .pos{color:#13813f;font-weight:700;} .mut{color:var(--muted);}
-.bdg{display:inline-block;padding:2px 10px;border-radius:99px;font-size:.74rem;font-weight:800;background:var(--primary-pale);color:var(--primary);} .bdg.o{background:#E8F5E9;color:var(--ok);} .bdg.w{background:#FFF3E0;color:var(--warn);} .bdg.b{background:#e0f4fc;color:#0b78a3;} .bdg.r{background:#fdecec;color:var(--danger);}
+.bdg{display:inline-block;padding:2px 10px;border-radius:99px;font-size:.74rem;font-weight:800;background:var(--primary-pale);color:var(--primary);} .bdg.o{background:#E8F5E9;color:var(--ok);} .bdg.w{background:#FFF3E0;color:var(--warn);} .bdg.b{background:#e0f4fc;color:#0b78a3;} .bdg.r{background:#fdecec;color:var(--danger);} .bdg.y{background:var(--yellow);color:#2a1416;min-width:28px;}
 .pgn{display:flex;gap:5px;flex-wrap:wrap;align-items:center;justify-content:center;padding:4px;} .pgn button{border:none;background:#ffe7dc;color:var(--primary);font-weight:800;border-radius:8px;min-width:36px;padding:7px 10px;cursor:pointer;} .pgn button.on{background:var(--primary);color:#fff;} .pgn button:disabled{opacity:.4;}
 .tot{font-weight:800;color:var(--primary-dark);font-size:.9rem;padding:2px 4px;}
 .top-i{display:flex;align-items:center;gap:10px;padding:7px 4px;border-bottom:1px solid #ffe7dc;} .top-i .rk{width:26px;height:26px;border-radius:50%;background:var(--primary-pale);color:var(--primary);font-weight:800;font-size:.78rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;} .top-i:nth-child(-n+3) .rk{background:var(--yellow);color:var(--primary-dark);}
@@ -149,7 +149,7 @@ fr:{title:'Suivi (lecture seule)',open:'Choisir le fichier',refresh:'Actualiser'
  w_t:'Aucun fichier chargé',w_p:"Choisissez le fichier « ANTIC FOODEX.xlsx » exporté par le programme (Paramètres → Sauvegarde → Export Excel). L'emplacement est mémorisé par ce navigateur.",w_b:'Choisir le fichier Excel',
  l_t:'Connexion',l_p:'Utilisez votre compte ANTIC FOODEX',l_user:'Utilisateur',l_pass:'Mot de passe',l_rem:'Mémoriser dans ce navigateur',l_go:'Se connecter',l_bad:'❌ Identifiants incorrects',l_nou:"Le fichier ne contient pas la table Utilisateur",l_noperm:"Ce compte n'a accès à aucune page",logout:'Déconnexion',
  f_file:'Fichier : ',f_upd:'Mis à jour : ',loading:'Chargement du fichier…',err_read:'Erreur de lecture : ',need_perm:"Autorisation refusée : choisissez à nouveau le fichier",none:'Aucune donnée',rec:'enreg.',tot:'Total',cnt:'opérations',
- h_date:'Date',h_time:'Heure',h_user:'Utilisateur',h_amt:'Montant',h_rem:'Remise',h_net:'Net',h_n:'N°',h_des:'Désignation',h_q:'Qté',h_pa:'P. achat',h_pv:'P. vente',h_va:'Val. achat',h_vv:'Val. vente',h_fam:'Famille',h_fo:'Fournisseur',h_tot:'Total',h_type:'Type',h_motif:'Motif',h_pu:'P.U',h_ben:'Bénéfice',h_kind:'Opération',h_ref:'Réf.',h_table:'Table',h_gross:'Brut',h_ktype:'Type',h_alert:'Seuil',h_state:'État',h_sug:'À acheter',h_unit:'Unité',h_note:'Note',h_sent:'Cuisine',
+ h_date:'Date',h_time:'Heure',h_user:'Utilisateur',h_amt:'Montant',h_rem:'Remise',h_net:'Net',h_n:'N°',h_des:'Désignation',h_q:'Qté',h_pa:'P. achat',h_pv:'P. vente',h_va:'Val. achat',h_vv:'Val. vente',h_fam:'Famille',h_fo:'Fournisseur',h_tot:'Total',h_type:'Type',h_motif:'Motif',h_pu:'P.U',h_ben:'Bénéfice',h_kind:'Opération',h_ref:'Réf.',h_table:'Table',h_gross:'Brut',h_ktype:'Type',h_alert:'Seuil',h_state:'État',h_sug:'À acheter',h_unit:'Unité',h_note:'Note',h_sent:'Cuisine',h_daily:'N° du jour',
  c_prod:'Articles',c_va:"Valeur d'achat (stock)",c_vv:'Valeur de vente (stock)',c_mg:'Marge',c_exp:'Total dépenses',c_ops:'Opérations',c_out:'En rupture',c_low:'Stock bas',c_cost:'Coût estimé',
  k_simple:'Sans stock',k_stock:'Avec stock',k_compose:'Composé',s_out:'Rupture',s_low:'Bas',
  m_sales:'Quantité vendue',m_buy:'Quantité achetée',m_left:'Stock restant',k_vc:'Vente',k_ac:'Achat',items:'Articles',
@@ -163,7 +163,7 @@ ar:{title:'مراقبة (قراءة فقط)',open:'اختيار الملف',refr
  w_t:'لا يوجد ملف محمَّل',w_p:'اختر ملف «ANTIC FOODEX.xlsx» الذي يصدّره البرنامج (الإعدادات ← النسخ الاحتياطي ← التصدير إلى Excel). يتذكّر هذا المتصفح موقع الملف.',w_b:'اختيار ملف Excel',
  l_t:'تسجيل الدخول',l_p:'استعمل حسابك في برنامج ANTIC FOODEX',l_user:'المستخدم',l_pass:'كلمة السر',l_rem:'تذكّرني في هذا المتصفح',l_go:'دخول',l_bad:'❌ بيانات الدخول غير صحيحة',l_nou:'الملف لا يحتوي على جدول المستخدمين',l_noperm:'هذا الحساب ليس لديه صلاحية لأي صفحة',logout:'خروج',
  f_file:'الملف: ',f_upd:'آخر تحديث: ',loading:'جارٍ تحميل الملف…',err_read:'خطأ في قراءة الملف: ',need_perm:'تم رفض الإذن: اختر الملف من جديد',none:'لا توجد بيانات',rec:'سجل',tot:'الإجمالي',cnt:'عملية',
- h_date:'التاريخ',h_time:'الوقت',h_user:'المستخدم',h_amt:'المبلغ',h_rem:'التخفيض',h_net:'الصافي',h_n:'رقم',h_des:'الإسم',h_q:'الكمية',h_pa:'سعر الشراء',h_pv:'سعر البيع',h_va:'قيمة الشراء',h_vv:'قيمة البيع',h_fam:'العائلة',h_fo:'المورد',h_tot:'المجموع',h_type:'النوع',h_motif:'السبب',h_pu:'السعر',h_ben:'الربح',h_kind:'العملية',h_ref:'المرجع',h_table:'الطاولة',h_gross:'الإجمالي',h_ktype:'النوع',h_alert:'حد التنبيه',h_state:'الحالة',h_sug:'للشراء',h_unit:'الوحدة',h_note:'ملاحظة',h_sent:'المطبخ',
+ h_date:'التاريخ',h_time:'الوقت',h_user:'المستخدم',h_amt:'المبلغ',h_rem:'التخفيض',h_net:'الصافي',h_n:'رقم',h_des:'الإسم',h_q:'الكمية',h_pa:'سعر الشراء',h_pv:'سعر البيع',h_va:'قيمة الشراء',h_vv:'قيمة البيع',h_fam:'العائلة',h_fo:'المورد',h_tot:'المجموع',h_type:'النوع',h_motif:'السبب',h_pu:'السعر',h_ben:'الربح',h_kind:'العملية',h_ref:'المرجع',h_table:'الطاولة',h_gross:'الإجمالي',h_ktype:'النوع',h_alert:'حد التنبيه',h_state:'الحالة',h_sug:'للشراء',h_unit:'الوحدة',h_note:'ملاحظة',h_sent:'المطبخ',h_daily:'رقم اليوم',
  c_prod:'المنتجات',c_va:'قيمة المخزون (شراء)',c_vv:'قيمة المخزون (بيع)',c_mg:'هامش الربح',c_exp:'إجمالي المصاريف',c_ops:'العمليات',c_out:'نافد',c_low:'منخفض',c_cost:'التكلفة التقديرية',
  k_simple:'بدون مخزون',k_stock:'خاضع للمخزون',k_compose:'مركّب',s_out:'نافد',s_low:'منخفض',
  m_sales:'الكمية المباعة',m_buy:'الكمية المشتراة',m_left:'المخزون المتبقي',k_vc:'بيع',k_ac:'شراء',items:'الأصناف',
@@ -311,7 +311,8 @@ const sorted = (a, f) => [...a].sort((x, y) => String(y[f] || '').localeCompare(
 const inR = (d, a, b) => { d = String(d || '').substring(0, 10); if(!d) return false; if(a && d < a) return false; if(b && d > b) return false; return true; };
 const validSale = r => !String(r.en_att == null ? '' : r.en_att).trim();               // en_att vide = vente validée
 const netOf = r => pn(r.montant) - pn(r.remise);                                          // montant = brut, remise = remise
-let KINDS = null;
+let KINDS = null, DAILY = null;
+function dailyOf(cod){ if(!DAILY){ DAILY = {}; L('agw_daily').forEach(d => { const c = String(d.cod_vente == null ? '' : d.cod_vente); if(c && c !== 'X') DAILY[c] = pn(d.n); }); } return DAILY[String(cod)] || 0; }
 function kindOf(p){ if(!KINDS){ KINDS = {}; L('agw_product_kind').forEach(k => KINDS[String(k.prod_id)] = String(k.kind || '')); } const k = KINDS[String(NO(p))]; return k === 'simple' || k === 'compose' ? k : 'stock'; }
 const kindBdg = k => '<span class="bdg ' + (k === 'simple' ? 'o' : k === 'compose' ? '' : 'b') + '">' + esc(t('k_' + k)) + '</span>';
 const sales = () => L('vente_comptoir').filter(validSale);
@@ -322,9 +323,9 @@ function stockAlerts(){
 const ST = {};
 const PAGES = [
   {id:'dash', perm:'caisse', k:'t_dash'},
-  {id:'vc', perm:'relve_v', k:'t_vc', date:'date_v', user:'utilisateur', find:r => [r.cod_vente, r.utilisateur, r.num_tab], src:sales,
+  {id:'vc', perm:'relve_v', k:'t_vc', date:'date_v', user:'utilisateur', find:r => [r.cod_vente, r.utilisateur, r.num_tab, dailyOf(r.cod_vente) || ''], src:sales,
     order:rows => [...rows].sort((a, b) => String(b.time || b.date_v || '').localeCompare(String(a.time || a.date_v || ''))),
-    cols:[{h:'h_n', f:r => r.cod_vente, b:1}, {h:'h_date', f:r => dd(r.date_v)}, {h:'h_time', f:r => hm(r.time) || '-', n:1}, {h:'h_table', f:r => r.num_tab ? tName(r.num_tab) : t('counter')}, {h:'h_user', f:r => '<span class="bdg">' + esc(r.utilisateur || '-') + '</span>', raw:1}, {h:'h_gross', f:r => fmt(r.montant), n:1}, {h:'h_rem', f:r => fmt(r.remise), n:1}, {h:'h_net', f:r => fmt(netOf(r)), n:1, b:1}],
+    cols:[{h:'h_daily', f:r => { const d = dailyOf(r.cod_vente); return d ? '<span class="bdg y">' + d + '</span>' : '<span class="mut">—</span>'; }, raw:1}, {h:'h_n', f:r => r.cod_vente, b:1}, {h:'h_date', f:r => dd(r.date_v)}, {h:'h_time', f:r => hm(r.time) || '-', n:1}, {h:'h_table', f:r => r.num_tab ? tName(r.num_tab) : t('counter')}, {h:'h_user', f:r => '<span class="bdg">' + esc(r.utilisateur || '-') + '</span>', raw:1}, {h:'h_gross', f:r => fmt(r.montant), n:1}, {h:'h_rem', f:r => fmt(r.remise), n:1}, {h:'h_net', f:r => fmt(netOf(r)), n:1, b:1}],
     sum:netOf, click:r => vcDetail(r),
     cards:rows => { const n = rows.reduce((s, r) => s + netOf(r), 0); return [['', 'd_sales', n], ['bl', 'd_cnt', rows.length, 1], ['y', 'd_avg', rows.length ? n / rows.length : 0], ['r', 'd_rem', rows.reduce((s, r) => s + pn(r.remise), 0)]]; }},
   {id:'tab', perm:'vente_comptoir', k:'t_tab', custom:1},
@@ -510,7 +511,7 @@ const tr = c => '<tr>' + c.map(x => '<td' + (x[1] ? ' class="' + x[1] + '"' : ''
 function vcDetail(r){
   const sb = can('benefice'), ls = L('ligne_comptoir').filter(l => String(l.cod_vente) === String(r.cod_vente));
   const heads = ['h_des', 'h_q', 'h_pu', 'h_amt'].concat(sb ? ['h_ben'] : []);
-  modal(t('t_vc') + ' ' + r.cod_vente + ' | ' + dd(r.date_v) + ' ' + hm(r.time), info([['h_user', esc(r.utilisateur || '-')], ['h_table', esc(r.num_tab ? tName(r.num_tab) : t('counter'))], ['h_gross', fmt(r.montant)], ['h_rem', fmt(r.remise)], ['h_net', fmt(netOf(r))]]), heads,
+  modal((dailyOf(r.cod_vente) ? t('h_daily') + ' ' + dailyOf(r.cod_vente) + ' — ' : '') + t('t_vc') + ' ' + r.cod_vente + ' | ' + dd(r.date_v) + ' ' + hm(r.time), info([['h_user', esc(r.utilisateur || '-')], ['h_table', esc(r.num_tab ? tName(r.num_tab) : t('counter'))], ['h_gross', fmt(r.montant)], ['h_rem', fmt(r.remise)], ['h_net', fmt(netOf(r))]]), heads,
     ls.map(l => tr([[l.designation || '-', 'des'], [qtyf(l.qte), 'n'], [fmt(l.prix_u), 'n'], [fmt(l.montant), 'n']].concat(sb ? [['<span class="' + cls(pn(l['bén_prod'])) + '">' + fmt(l['bén_prod']) + '</span>', 'n', 1]] : []))).join(''));
 }
 function acDetail(cod){
@@ -582,7 +583,7 @@ function doLogin(e){
 function logout(){ USER = null; try{ localStorage.removeItem('fx_cred'); }catch(e){} $('lu').value = ''; $('lp').value = ''; $('lo').style.display = 'none'; $('who').textContent = ''; showLogin(); }
 function start(){
   if(!DB) return;
-  KINDS = null;
+  KINDS = null; DAILY = null;
   if(!tbl('utilisateur')){ USER = null; showLogin(t('l_nou')); return; }
   // ré-validation à chaque chargement du fichier (mot de passe / droits peuvent avoir changé)
   if(USER){ const r = userRow(USER.nom); USER = r && sv(fld(r, 'mot_passe')) === USER.h ? mkUser(r) : null; }
